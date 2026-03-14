@@ -5,6 +5,9 @@ def decide_from_context(ctx: dict) -> str:
     if regime == "Stress":
         return "pause"
 
+    if regime == "Elevated Fragility":
+        return "reduce_risk"
+
     if severity == "high":
         return "reduce_risk"
 
